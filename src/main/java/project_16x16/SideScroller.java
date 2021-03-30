@@ -601,6 +601,7 @@ public class SideScroller extends PApplet {
 	// Main
 	public static void main(String args[]) {
 		PApplet.main(SideScroller.class, args);
-		//Testing github
+		//Testing github 1
+		//Testing github 2
 	}
 }
