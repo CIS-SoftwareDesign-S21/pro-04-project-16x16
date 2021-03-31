@@ -13,6 +13,8 @@ For essentially anyone from an elementary school student to a busy office worker
 # Personas
 ![richard](/Richard.png)
 
-
 ![image](https://user-images.githubusercontent.com/46765760/113074674-80b06600-9199-11eb-9c5e-f256805013f1.png)
+
+![Screen Shot 2021-03-31 at 1 40 57 AM](https://user-images.githubusercontent.com/60633000/113095851-3a233180-91c2-11eb-9dce-67e4999b5d38.png)
+
 
