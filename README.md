@@ -2,9 +2,11 @@
 
 **Project 16x16** is a 2D platformer game made with **Java** and **processing** (processing is an open-source low-level animation and GUI library built on Java). It is an open-source project looking for people to make some awesome contributions. It was originally created by [Stephencraft](https://github.com/Stephcraft) and this repository contains the [latest source code](https://github.com/Stephcraft/Project-16x16), which will be worked on and modified by a group of five Temple University students as their final project of the CIS3296 class. Currently, the game lacks basic functionalities such as a proper setting interface for the user to do adjustments such as making keyboard and graphic changes, it also lacks an actual "play game" mode and the user interface is not friendly. Our goal is to make contributions to the current version by adding more useful features such as a story mode, more in-game items including traps, creative puzzle designs, and revise the UI to improve the user experience.
 
-Link to the [project proposal](https://github.com/WayneJWZLemon/CIS3296ProjectProposal/blob/main/README.md)
+Link to [the project proposal](https://github.com/WayneJWZLemon/CIS3296ProjectProposal/blob/main/README.md)
 
-Link to the [project board](https://github.com/CIS-SoftwareDesign-S21/pro-04-project-16x16/projects/1)
+Link to [the features list](https://github.com/CIS-SoftwareDesign-S21/pro-04-project-16x16/issues)
+
+Link to [the project board to track the development of the features](https://github.com/CIS-SoftwareDesign-S21/pro-04-project-16x16/projects/1)
 
 # Vision Statement
 
