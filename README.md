@@ -8,9 +8,17 @@ Link to [the features list](https://github.com/CIS-SoftwareDesign-S21/pro-04-pro
 
 Link to [the project board to track the development of the features](https://github.com/CIS-SoftwareDesign-S21/pro-04-project-16x16/projects/1)
 
+# Project Structure and Management
+The current game already have a well-developed code base, meaning that our contirbutions can be built on top of many useful exisiting code, however, a larger code base also made it hard to manage our new code and can easily break things and lose track of our progress.
+From examing the code base, the previous contributors/authors made extensive usage of the Processing library, specifically classes like Papplet, PImage, PVector, etc. It is a good idea to review these important objects in Processing.
+In Intellij, there is a feature to build rough sketch of class diagram, by clicking on the specified folder then click on **Diagram** option in the drop-down menu, then select **Show Diagrams** and **Java Classes**. 
+For our contributions, we are mainly dealing with the code in "objects", "scene", "ui" folders along with SideScrolle.java and Tileset.java.
+![Package project_16x16](https://user-images.githubusercontent.com/60633000/113729422-02861f00-96c5-11eb-9a8a-c1d80184a87c.png)
+
+
 # Vision Statement
 
-For essentially anyone from an elementary school student to a busy office worker who needs an enjoyable and visually appealing game to bring some fun to their day. Project 16x16 is an astonishing 2D platformer game with smooth gameplay mechanics as well as compelling story concepts, creative level designs, and magnificent soundtracks. Furthermore, it allows multi-players interaction so that you can play with friends to solve puzzles while advancing through different stages of the game. Unlike other products such as Sonic the Hedgehog and Super Mario, our game aims to bring smooth game mechanics and a cooperative environment together, making it a unique combination of multiplayer action games and multiplayer puzzle games. Gaming is often an entertainment and a hobby for people of different ages. The goal of Project 16x16 is to provide engaging gameplay that trains problem-solving and logic of the player, and to prompt teamwork and cooperation when played with others.
+For essentially anyone from an elementary school student to a busy office worker who needs an enjoyable and visually appealing game to bring some fun to their day. Project 16x16 is an astonishing 2D platformer game with smooth gameplay mechanics as well as compelling story concepts, creative level designs, and magnificent soundtracks. Furthermore, it allows multi-players interaction so that you can play with friends to solve puzzles while advancing through different stages of the game. Unlike other products such as Sonic the Hedgehog and Super Mario, our contributions aims to bring smooth game mechanics and a cooperative environment together, making it a unique combination of multiplayer action games and multiplayer puzzle games. Gaming is often an entertainment and a hobby for people of different ages. The goal of Project 16x16 is to provide engaging gameplay that trains problem-solving and logic of the player, and to prompt teamwork and cooperation when played with others.
 
 # Personas
 ![richard](/Richard.png)
