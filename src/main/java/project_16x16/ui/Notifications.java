@@ -114,7 +114,7 @@ public class Notifications {
 		game.image(background, position.x, position.y);
 		game.textSize(18);
 		// @formatter:off
-		game.text("Notification: " + title,
+		game.text("How to play: " + title,
 				position.x + notificationTextPadding,
 				position.y + notificationTextPadding,
 				notificationWidth - notificationTextPadding, 
