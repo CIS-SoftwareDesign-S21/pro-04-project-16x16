@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="" />
+Enable-level-editor-blocks
+    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/objects/EditableObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/objects/EditableObject.java" afterDir="false" />
+    </list>
+
+    main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +84,14 @@
       <workItem from="1617122767930" duration="571000" />
       <workItem from="1617123406181" duration="1082000" />
     </task>
+    <task id="LOCAL-00001" summary="My github Test">
+      <created>1617143954995</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617143954995</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +108,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="My github Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="My github Test" />
   </component>
 </project>
