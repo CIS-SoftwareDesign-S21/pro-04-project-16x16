@@ -221,7 +221,7 @@
     {"name": "MIRROR_BOX", "x": 21, "y": 10, "type": "OBJECT"},
     {"name": "MAGIC_SOURCE", "x": 13, "y": 16, "type": "OBJECT"},
     {"name": "Spikes", "x": 12, "y": 2, "type": "OBJECT"},
-    
+
     {"name": "Door", "x": 0, "y": 6, "type": "OBJECT"},
     {"name": "Platform:0", "x": 0, "y": 11, "type": "OBJECT"},
     {"name": "Platform:1", "x": 1, "y": 11, "type": "OBJECT"},
@@ -241,7 +241,7 @@
     {"name": "Lever:4", "x": 9, "y": 8, "type": "OBJECT"},
     {"name": "Box_Physics", "x": 4, "y": 8, "type": "OBJECT"},
     {"name": "Pressure_Plate", "x": 4, "y": 11, "type": "OBJECT"},
-    
+
     {"name": "Battery:0", "x": 4, "y": 10, "type": "OBJECT"},
     {"name": "Battery:1", "x": 5, "y": 10, "type": "OBJECT"},
     {"name": "Battery:2", "x": 6, "y": 10, "type": "OBJECT"},
@@ -375,7 +375,6 @@
 
     {"name": "Light:0", "x": 8, "y": 10, "type": "ANIMATION"},
     {"name": "Light:1", "x": 9, "y": 10, "type": "ANIMATION"},
-
     {"name": "MirrorBoxRotate1", "x": 24, "y": 10, "type": "ANIMATION"},
     {"name": "MirrorBoxRotate2", "x": 24, "y": 11, "type": "ANIMATION"},
     {"name": "MirrorBoxRotate3", "x": 24, "y": 13, "type": "ANIMATION"},
@@ -383,6 +382,8 @@
     {"name": "MirrorBoxRotate5", "x": 24, "y": 16, "type": "ANIMATION"},
     {"name": "MirrorBoxRotate6", "x": 24, "y": 17, "type": "ANIMATION"},
     {"name": "MirrorBoxRotate7", "x": 24, "y": 18, "type": "ANIMATION"}
+
+
   ],
   "animations": [
     {
@@ -413,5 +414,6 @@
       "name": "Trampoline_Up",
       "tileRef": [{ "name": "Trampoline_Up:1"}, {"name": "Trampoline_Up:2"} ]
     }
+
   ]
 }

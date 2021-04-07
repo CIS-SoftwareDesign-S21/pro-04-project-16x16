@@ -132,7 +132,7 @@ public class GameplayScene extends PScene {
 
 		objects = new ArrayList<EditableObject>();
 
-		// Create Inventory
+		// Create Inventory - all of these affect our ability to edit the objects on the screen
 		inventory = new ArrayList<String>();
 		inventory.add("Metal");
 		inventory.add("Metal_Walk_Left:0");
@@ -145,8 +145,8 @@ public class GameplayScene extends PScene {
 		editorItem = new EditorItem(applet, this);
 
 		// Get Slots Graphics
-		slot = Tileset.getTile(289, 256, 20, 21, 4);
-		slotEditor = Tileset.getTile(310, 256, 20, 21, 4);
+		slot = Tileset.getTile(289, 256, 20, 21, 4);//tiles in left upper corner of screen
+		slotEditor = Tileset.getTile(310, 256, 20, 21, 4);//this is the tiles which can be dragged unto the screen
 
 		// Get Icon Graphics
 		icon_modify = Tileset.getTile(279, 301, 9, 9, 4);
