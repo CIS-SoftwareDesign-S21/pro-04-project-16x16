@@ -360,7 +360,7 @@ public class SideScroller extends PApplet {
 				camera.shake(0.4f);
 				break;
 			case Options.notify :
-				Notifications.addNotification("Hello", "World");
+				Notifications.addNotification( "", "press A to move left\npress D to move right\npress Space to jump\nleft click to attack");
 				break;
 			case Options.fullscreen :
 				noLoop();
