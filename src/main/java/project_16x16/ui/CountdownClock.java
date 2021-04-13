@@ -22,7 +22,7 @@ public class CountdownClock {
     }
 
     public static void main(String args[]){
-        System.out.println("TEST");
+        System.out.println("TEST: 10 sec countdown");
         CountdownClock c = new CountdownClock(10);
         while(c.calculateTime() <= c.getTimeLimit()){
             System.out.println(c.timeRemaining());
