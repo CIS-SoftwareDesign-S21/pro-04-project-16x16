@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_4_8_2021_1_39_AM_[Default_Changelist]" date="1617860404340" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_8_2021_1_39_AM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 4/8/2021 1:39 AM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/project_16x16/objects/EditorItem$1.class" />
+    <option name="AFTER_PATH" value="target/classes/project_16x16/objects/EditorItem$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_8_2021_1_39_AM_[Default_Changelist]/EditorItem$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/project_16x16/objects/EditorItem.class" />
+    <option name="AFTER_PATH" value="target/classes/project_16x16/objects/EditorItem.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_8_2021_1_39_AM_[Default_Changelist]/EditorItem.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/project_16x16/SideScroller.class" />
+    <option name="AFTER_PATH" value="target/classes/project_16x16/SideScroller.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_8_2021_1_39_AM_[Default_Changelist]/SideScroller.class" />
+  </binary>
+</changelist>

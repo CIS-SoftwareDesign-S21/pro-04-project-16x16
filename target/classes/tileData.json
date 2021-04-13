@@ -218,9 +218,9 @@
     {"name": "Tank_Large:8", "x": 21, "y": 8, "type": "BACKGROUND"},
     {"name": "Tank_Large:9", "x": 22, "y": 8, "type": "BACKGROUND"},
 
-    {"name": "MIRROR_BOX", "x": 21, "y": 10, "type": "OBJECT"},
+    {"name": "MIRROR_BOX", "x": 21, "y": 10, "type": "ANIMATION"},
     {"name": "MAGIC_SOURCE", "x": 13, "y": 16, "type": "OBJECT"},
-    {"name": "Spikes", "x": 12, "y": 2, "type": "OBJECT"},
+    {"name": "Spikes", "x": 12, "y": 2, "type": "ANIMATION"},
 
     {"name": "Door", "x": 0, "y": 6, "type": "OBJECT"},
     {"name": "Platform:0", "x": 0, "y": 11, "type": "OBJECT"},
@@ -361,7 +361,7 @@
     {"name": "Battery_Orb:1", "x": 22, "y": 9, "type": "ANIMATION"},
     {"name": "Battery_Orb:2", "x": 23, "y": 9, "type": "ANIMATION"},
     {"name": "Battery_Orb:3", "x": 24, "y": 9, "type": "ANIMATION"},
-    {"name": "Battery_Orb:4", "x": 25, "y": 9, "type": "ANIMATION"},
+    {"name": "Battery_Orb:4", "x": 25, "y": 9, "type": "OBJECT"},
     {"name": "Battery_Orb:5", "x": 26, "y": 9, "type": "ANIMATION"},
     {"name": "Battery_Orb:6", "x": 27, "y": 9, "type": "ANIMATION"},
     {"name": "Battery_Orb_Off", "x": 28, "y": 9, "type": "ANIMATION"},

@@ -10,6 +10,7 @@ import project_16x16.Tileset;
 
 public class MirrorBoxObject extends GameObject {
 
+	private String id;
 	public int direction;
 	public boolean rotating;
 	public boolean activated;
@@ -20,9 +21,35 @@ public class MirrorBoxObject extends GameObject {
 	final int BOX_UP = 3;
 	final int BOX_W = 64;
 	final int BOX_H = 64;
+	private int y;
+	private int x;
 
 	public MirrorBoxObject(SideScroller a, GameplayScene g) {
 		super(a, g);
+
+		//this.y = y;
+		//this.x = x;
+
+		direction = 0;
+
+		type = type.OBJECT;
+
+		id = "MIRROR_BOX";
+		image = Tileset.getTile("MIRROR_BOX");
+
+		width = BOX_W;
+		height = BOX_H;
+
+		collision = new CollidableObject(applet, g, BOX_W, BOX_H, 0, 0, true);
+		collision.flag = "TRANSPARENT_BULLET";
+		g.objects.add(collision);
+	}
+
+	public MirrorBoxObject(SideScroller a, GameplayScene g, String id, int x, int y) {
+		super(a, g);
+
+		this.y = y;
+		this.x = x;
 
 		direction = 0;
 

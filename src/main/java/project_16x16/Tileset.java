@@ -6,6 +6,7 @@ import java.util.List;
 
 import project_16x16.components.Tile;
 import project_16x16.components.Tile.TileType;
+import project_16x16.objects.BatteryObject;
 import project_16x16.objects.GameObject;
 import project_16x16.objects.MagicSourceObject;
 import project_16x16.objects.MirrorBoxObject;
@@ -189,6 +190,8 @@ public class Tileset {
 				return MagicSourceObject.class;
 			case "MIRROR_BOX" :
 				return MirrorBoxObject.class;
+			case "Battery_Orb:4" :
+				return BatteryObject.class;
 			default :
 				return GameObject.class;
 		}

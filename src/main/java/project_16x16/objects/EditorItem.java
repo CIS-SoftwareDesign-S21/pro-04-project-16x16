@@ -70,7 +70,8 @@ public class EditorItem extends PClass {
 								Class<? extends GameObject> gameObjectClass = Tileset.getObjectClass(id);
 								Constructor<?> ctor = gameObjectClass.getDeclaredConstructors()[0];
 								c = (GameObject) ctor.newInstance(new Object[] { applet, gameplayScene, id, 0, 0});
-								System.out.println("i did this" + c );
+								System.out.println("i did this " + c );
+								c.pos.set(realPos);
 								break;
 							} catch (Exception e) {
 								e.printStackTrace();

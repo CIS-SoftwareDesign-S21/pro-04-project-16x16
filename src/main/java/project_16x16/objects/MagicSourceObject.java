@@ -22,6 +22,7 @@ public class MagicSourceObject extends GameObject {
 	private static ArrayList<PImage> particleAnimation;
 	private ParticleSystem trail;
 
+
 	public MagicSourceObject(SideScroller a, GameplayScene g) {
 		super(a, g);
 
