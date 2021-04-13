@@ -29,6 +29,7 @@ public final class MainMenu extends PScene {
 	public Button pressQuit;
 	public Button pressSettings; // TODO add settings menu
 	public Button pressMultiplayer;
+	public Button pressStory;
 
 	private SideScroller game;
 
@@ -47,19 +48,25 @@ public final class MainMenu extends PScene {
 		pressMultiplayer = new Button(a);
 		pressQuit = new Button(a);
 		pressSettings = new Button(a);
+		pressStory = new Button(a);
 
 		pressStart.setText("Start Game");
 		pressStart.setPosition(applet.width / 2, applet.height / 2 - 240);
 		pressStart.setSize(300, 100);
 		pressStart.setTextSize(40);
 
+		pressStory.setText("Story Mode");
+		pressStory.setPosition(applet.width / 2, applet.height / 2 - 120);
+		pressStory.setSize(300, 100);
+		pressStory.setTextSize(40);
+
 		pressMultiplayer.setText("Multiplayer");
-		pressMultiplayer.setPosition(applet.width / 2, applet.height / 2 - 80);
+		pressMultiplayer.setPosition(applet.width / 2, applet.height / 2);
 		pressMultiplayer.setSize(300, 100);
 		pressMultiplayer.setTextSize(40);
 
 		pressSettings.setText("Settings");
-		pressSettings.setPosition(applet.width / 2, applet.height / 2 + 80);
+		pressSettings.setPosition(applet.width / 2, applet.height / 2 + 120);
 		pressSettings.setSize(300, 100);
 		pressSettings.setTextSize(40);
 
@@ -88,6 +95,7 @@ public final class MainMenu extends PScene {
 		pressMultiplayer.manDisplay();
 		pressSettings.manDisplay();
 		pressQuit.manDisplay();
+		pressStory.manDisplay();
 	}
 
 	private void update() {
@@ -110,6 +118,11 @@ public final class MainMenu extends PScene {
 		pressQuit.update();
 		if (pressQuit.hover()) {
 			System.exit(0);
+		}
+
+		pressStory.update();
+		if (pressStory.hover()){
+			System.out.println("STORY MODE ENGAGED -- STUB FOR ACTUAL STORY MODE");
 		}
 	}
 

@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-Enable-level-editor-blocks
     <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/objects/EditableObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/objects/EditableObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles$Particle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles$Particle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu.class" afterDir="false" />
     </list>
-
-    main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +44,17 @@ Enable-level-editor-blocks
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SideScroller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="project_16x16.SideScroller" />
       <module name="Project_16x16" />
@@ -52,17 +64,6 @@ Enable-level-editor-blocks
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
