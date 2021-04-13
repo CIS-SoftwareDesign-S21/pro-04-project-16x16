@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project_16x16/ui/CountdownClock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/objects/EditorItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/objects/EditorItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/objects/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/objects/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/objects/EditorItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/objects/EditorItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/objects/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/objects/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles$Particle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles$Particle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/ui/CountdownClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/ui/CountdownClock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +25,29 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="CountdownClock" />
+                    <option name="lastUsedInstant" value="1618340671" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1618340670" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1qU8N57o6tADffYVEx0fxR25AL1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
