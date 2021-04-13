@@ -8,8 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles$Particle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles$Particle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu$Particles.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
