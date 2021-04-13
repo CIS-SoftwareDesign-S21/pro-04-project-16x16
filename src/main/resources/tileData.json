@@ -361,7 +361,7 @@
     {"name": "Battery_Orb:1", "x": 22, "y": 9, "type": "ANIMATION"},
     {"name": "Battery_Orb:2", "x": 23, "y": 9, "type": "ANIMATION"},
     {"name": "Battery_Orb:3", "x": 24, "y": 9, "type": "ANIMATION"},
-    {"name": "Battery_Orb:4", "x": 25, "y": 9, "type": "ANIMATION"},
+    {"name": "Battery_Orb:4", "x": 25, "y": 9, "type": "COLLISION"},
     {"name": "Battery_Orb:5", "x": 26, "y": 9, "type": "ANIMATION"},
     {"name": "Battery_Orb:6", "x": 27, "y": 9, "type": "ANIMATION"},
     {"name": "Battery_Orb_Off", "x": 28, "y": 9, "type": "ANIMATION"},
