@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="" />
+    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/ui/Notifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/ui/Notifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/ui/Notifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/ui/Notifications.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qU8N57o6tADffYVEx0fxR25AL1" />
