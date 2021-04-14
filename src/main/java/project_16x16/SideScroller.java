@@ -194,7 +194,8 @@ public class SideScroller extends PApplet {
 
 		// Create scene
 		sceneHistory = new ArrayDeque<>();
-		game = new GameplayScene(this, Constants.DEV_LEVEL);
+		//game = new GameplayScene(this, Constants.DEV_LEVEL);
+		game = new GameplayScene(this, Constants.LEVEL1);
 		menu = new MainMenu(this);
 		pmenu = new PauseMenu(this);
 		settings = new Settings(this);
