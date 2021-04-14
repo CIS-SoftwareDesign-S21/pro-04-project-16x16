@@ -8,6 +8,7 @@ import project_16x16.SideScroller.GameScenes;
 import project_16x16.ui.Button;
 import project_16x16.ui.Notifications;
 import project_16x16.ui.NumberInputField;
+import project_16x16.ui.TextInputField;
 
 /**
  * WIP - the settings menu
@@ -35,15 +36,15 @@ public class ConfigureControls extends PScene {
     private Button pressControlsOptions;
     private Button pressMiscOptions;
 
-    private NumberInputField windowSizeX;
-    private NumberInputField windowSizeX1;
-    private NumberInputField windowSizeX2;
-    private NumberInputField windowSizeX3;
-    private NumberInputField windowSizeX4;
-    private NumberInputField windowSizeX5;
-    private NumberInputField windowSizeX6;
-    private NumberInputField windowSizeX7;
-    private NumberInputField windowSizeX8;
+    private TextInputField windowSizeX;
+    private TextInputField windowSizeX1;
+    private TextInputField windowSizeX2;
+    private TextInputField windowSizeX3;
+    private TextInputField windowSizeX4;
+    private TextInputField windowSizeX5;
+    private TextInputField windowSizeX6;
+    private TextInputField windowSizeX7;
+    private TextInputField windowSizeX8;
 
 
 
@@ -73,28 +74,28 @@ public class ConfigureControls extends PScene {
         pressControlsOptions.setText("Configure Controls");
         pressControlsOptions.setPosition(WINDOW_X_POS , WINDOW_Y_POS + CONTROL_Y_OFFSET);
 
-        windowSizeX = new NumberInputField(a);
+        windowSizeX = new TextInputField(a);
         windowSizeX.setPosition(WINDOW_X_POS , WINDOW_Y_POS -230 );
 
-        windowSizeX1 = new NumberInputField(a);
+        windowSizeX1 = new TextInputField(a);
         windowSizeX1.setPosition(WINDOW_X_POS , WINDOW_Y_POS -180 );
 
-        windowSizeX2 = new NumberInputField(a);
+        windowSizeX2 = new TextInputField(a);
         windowSizeX2.setPosition(WINDOW_X_POS , WINDOW_Y_POS -130 );
 
-        windowSizeX3 = new NumberInputField(a);
+        windowSizeX3 = new TextInputField(a);
         windowSizeX3.setPosition(WINDOW_X_POS , WINDOW_Y_POS -80 );
 
-        windowSizeX4 = new NumberInputField(a);
+        windowSizeX4 = new TextInputField(a);
         windowSizeX4.setPosition(WINDOW_X_POS , WINDOW_Y_POS -30 );
 
-        windowSizeX5 = new NumberInputField(a);
+        windowSizeX5 = new TextInputField(a);
         windowSizeX5.setPosition(WINDOW_X_POS , WINDOW_Y_POS +20 );
 
-        windowSizeX6 = new NumberInputField(a);
+        windowSizeX6 = new TextInputField(a);
         windowSizeX6.setPosition(WINDOW_X_POS , WINDOW_Y_POS +70 );
 
-        windowSizeX7 = new NumberInputField(a);
+        windowSizeX7 = new TextInputField(a);
         windowSizeX7.setPosition(WINDOW_X_POS , WINDOW_Y_POS +120 );
 
 
