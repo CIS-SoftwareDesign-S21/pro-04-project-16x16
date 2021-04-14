@@ -204,7 +204,7 @@ public class SideScroller extends PApplet {
 		mHostMenu = new MultiplayerHostMenu(this);
 		mClientMenu = new MultiplayerClientMenu(this);
 		audioSettings = new AudioSettings(this);
-		story = new StartStoryScene(this);
+		story = new StartStoryScene(this, Constants.LEVEL_1);
 		swapToScene(GameScenes.MAIN_MENU);
 
 		// Camera
