@@ -76,10 +76,12 @@ public class SideScroller extends PApplet {
 	private static MultiplayerHostMenu mHostMenu;
 	private static MultiplayerClientMenu mClientMenu;
 	private static AudioSettings audioSettings;
+	private static StartStoryScene story;
+
 
 	public enum GameScenes {
 		MAIN_MENU(menu), GAME(game), PAUSE_MENU(pmenu), SETTINGS_MENU(settings), MULTIPLAYER_MENU(mMenu),
-		HOST_MENU(mHostMenu), CLIENT_MENU(mClientMenu), AUDIO_SETTINGS(audioSettings);
+		HOST_MENU(mHostMenu), CLIENT_MENU(mClientMenu), AUDIO_SETTINGS(audioSettings), STORY_MODE(story);
 
 		PScene scene;
 
@@ -202,6 +204,7 @@ public class SideScroller extends PApplet {
 		mHostMenu = new MultiplayerHostMenu(this);
 		mClientMenu = new MultiplayerClientMenu(this);
 		audioSettings = new AudioSettings(this);
+		story = new StartStoryScene(this);
 		swapToScene(GameScenes.MAIN_MENU);
 
 		// Camera

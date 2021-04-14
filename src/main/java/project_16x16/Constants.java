@@ -18,7 +18,9 @@ public final class Constants {
 	public static final float CAMERA_ZOOM_MAX = 3.0f;
 	public static final float CAMERA_ZOOM_MIN = 0.3f;
 	public static final float GAME_GRAVITY = 1;
-	
+
+	public static final String LEVEL_1 = "Storage/Game/Maps/levEl1.dat";
+
 	public static final String GAME_FONT = "Font/font-pixel-48.vlw";
 	
 	/**
