@@ -12,7 +12,7 @@ public class Tile {
 	private TileType tileType;
 	
 	public enum TileType {
-		COLLISION, BACKGROUND, OBJECT, ENTITY;
+		COLLISION, BACKGROUND, OBJECT, ENTITY, ANIMATION;
 	}
 	
 	public Tile(int ID, String name, PImage pImage, TileType tileType) {

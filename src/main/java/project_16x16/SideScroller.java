@@ -189,8 +189,8 @@ public class SideScroller extends PApplet {
 		AnimationComponent.assignApplet(this);
 		Notifications.assignApplet(this);
 		Audio.assignApplet(this);
-		Audio.setGainBGM(-6); // TODO
-		Audio.setGainSFX(-6); // TODO
+		Audio.setGainBGM(-60); // TODO
+		Audio.setGainSFX(-60); // TODO
 
 		// Create scene
 		sceneHistory = new ArrayDeque<>();

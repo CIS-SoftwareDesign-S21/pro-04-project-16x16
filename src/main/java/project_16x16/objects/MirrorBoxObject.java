@@ -9,6 +9,7 @@ import project_16x16.SideScroller;
 import project_16x16.Tileset;
 
 public class MirrorBoxObject extends GameObject {
+	PlatformObject bridge;
 
 	public int direction;
 	public boolean rotating;
@@ -27,7 +28,7 @@ public class MirrorBoxObject extends GameObject {
 		direction = 0;
 
 		type = type.OBJECT;
-
+		bridge = new PlatformObject( a, g);
 		id = "MIRROR_BOX";
 		image = Tileset.getTile("MIRROR_BOX");
 
@@ -37,6 +38,8 @@ public class MirrorBoxObject extends GameObject {
 		collision = new CollidableObject(applet, g, BOX_W, BOX_H, 0, 0, true);
 		collision.flag = "TRANSPARENT_BULLET";
 		g.objects.add(collision);
+
+		//image = animation.animate();
 	}
 
 	public void display() {
@@ -70,7 +73,13 @@ public class MirrorBoxObject extends GameObject {
 				if (!swing.activated) {
 					rotating = true;
 					// Setup Animation
-					animation.changeAnimation(Tileset.getAnimation("MIRROR_BOX::ROTATE"), false, 1);
+					//animation.changeAnimation(Tileset.getAnimation("MIRROR_BOX::ROTATE"), false, 1);
+					//bridge.doAnimate();
+					//bridge.image.width = 100;
+					bridge.an();
+					animation.changeAnimation(Tileset.getAnimation("PLATFORM::CHANGE"), true, 10);
+
+					//PlatformObject.doAnimate();
 					swing.activated = true;
 				}
 			}
@@ -94,16 +103,16 @@ public class MirrorBoxObject extends GameObject {
 	public void activateMirrorBox(boolean checkHit) {
 		if (!rotating) {
 			if (activated && checkHit) {
-				image = Tileset.getTile("MIRROR_BOX_HIT");
+				//image = Tileset.getTile("MIRROR_BOX_HIT");
 			} else {
-				image = Tileset.getTile("MIRROR_BOX");
+				//image = Tileset.getTile("MIRROR_BOX");
 			}
 		}
 	}
 
 	public void setMirrorDirection() {
 		if (animation.ended && rotating) {
-			image = Tileset.getTile("MIRROR_BOX");
+			//image = Tileset.getTile("MIRROR_BOX");
 			rotating = false;
 			direction = (direction + 1) % 4;// Allow rotation with the use of modulus
 			animation.ended = false;

@@ -26,8 +26,8 @@
 
     {"name": "Platform_Walk_Corner_Left", "x": 19, "y": 4, "type": "COLLISION"},
     {"name": "Platform_Walk_Corner_Right", "x": 20, "y": 4, "type": "COLLISION"},
-    {"name": "Platform_Left", "x": 16, "y": 0, "type": "COLLISION"},
-    {"name": "Platform_Right", "x": 17, "y": 0, "type": "COLLISION"},
+    {"name": "Platform_Left", "x": 16, "y": 0, "type": "BACKGROUND"},
+    {"name": "Platform_Right", "x": 17, "y": 0, "type": "BACKGROUND"},
 
     {"name": "Platform_Support:0", "x": 19, "y": 1, "type": "COLLISION"},
     {"name": "Platform_Support:1", "x": 20, "y": 1, "type": "COLLISION"},
@@ -150,7 +150,7 @@
     {"name": "Weed:0", "x": 8, "y": 5, "type": "BACKGROUND"},
     {"name": "Weed:1", "x": 9, "y": 5, "type": "BACKGROUND"},
     {"name": "Weed:2", "x": 10, "y": 5, "type": "BACKGROUND"},
-    
+
     {"name": "Sign:0", "x": 16, "y": 4, "type": "BACKGROUND"},
     {"name": "Sign:1", "x": 16, "y": 5, "type": "BACKGROUND"},
     {"name": "Sign:2", "x": 16, "y": 6, "type": "BACKGROUND"},
@@ -159,7 +159,7 @@
     {"name": "Sign:5", "x": 18, "y": 5, "type": "BACKGROUND"},
 
     {"name": "SignWriting", "x": 11, "y": 7, "type": "BACKGROUND"},
-    
+
     {"name": "Desk_Left:0", "x": 17, "y": 6, "type": "BACKGROUND"},
     {"name": "Desk_Right:0", "x": 18, "y": 6, "type": "BACKGROUND"},
     {"name": "Desk_Left:1", "x": 17, "y": 7, "type": "BACKGROUND"},
@@ -221,11 +221,11 @@
     {"name": "MIRROR_BOX", "x": 21, "y": 10, "type": "OBJECT"},
     {"name": "MAGIC_SOURCE", "x": 13, "y": 16, "type": "OBJECT"},
     {"name": "Spikes", "x": 12, "y": 2, "type": "BACKGROUND"},
-    
+
     {"name": "Door", "x": 0, "y": 6, "type": "OBJECT"},
-    {"name": "Platform:0", "x": 0, "y": 11, "type": "OBJECT"},
-    {"name": "Platform:1", "x": 1, "y": 11, "type": "OBJECT"},
-    {"name": "Platform:2", "x": 2, "y": 11, "type": "OBJECT"},
+    {"name": "Platform:0", "x": 0, "y": 11, "type": "ANIMATION"},
+    {"name": "Platform:1", "x": 1, "y": 11, "type": "ANIMATION"},
+    {"name": "Platform:2", "x": 2, "y": 11, "type": "ANIMATION"},
     {"name": "Platform:3", "x": 3, "y": 11, "type": "OBJECT"},
     {"name": "Trampoline", "x": 1, "y": 5, "type": "OBJECT"},
 
@@ -241,7 +241,7 @@
     {"name": "Lever:4", "x": 9, "y": 8, "type": "OBJECT"},
     {"name": "Box_Physics", "x": 4, "y": 8, "type": "OBJECT"},
     {"name": "Pressure_Plate", "x": 4, "y": 11, "type": "OBJECT"},
-    
+
     {"name": "Battery:0", "x": 4, "y": 10, "type": "OBJECT"},
     {"name": "Battery:1", "x": 5, "y": 10, "type": "OBJECT"},
     {"name": "Battery:2", "x": 6, "y": 10, "type": "OBJECT"},
@@ -313,7 +313,7 @@
     {"name": "Swing2", "x": 5, "y": 18, "type": "ANIMATION"},
     {"name": "Swing3", "x": 6, "y": 18, "type": "ANIMATION"},
     {"name": "Swing4", "x": 7, "y": 18, "type": "ANIMATION"},
-    
+
     {"name": "MIRROR_BOX_HIT", "x": 22, "y": 10, "type": "ANIMATION"},
 
     {"name": "Trampoline_Up:1", "x": 2, "y": 5, "type": "ANIMATION"},
@@ -340,7 +340,6 @@
     {"name": "Platform:0", "x": 0, "y": 11, "type": "ANIMATION"},
     {"name": "Platform:1", "x": 1, "y": 11, "type": "ANIMATION"},
     {"name": "Platform:2", "x": 2, "y": 11, "type": "ANIMATION"},
-    {"name": "Platform:3", "x": 3, "y": 11, "type": "ANIMATION"},
 
     {"name": "Lever:0", "x": 5, "y": 8, "type": "ANIMATION"},
     {"name": "Lever:1", "x": 6, "y": 8, "type": "ANIMATION"},
@@ -412,6 +411,10 @@
     {
       "name": "Trampoline_Up",
       "tileRef": [{ "name": "Trampoline_Up:1"}, {"name": "Trampoline_Up:2"} ]
+    },
+    {
+      "name": "PLATFORM::CHANGE",
+      "tileRef": [{ "name": "Platform:0"}, {"name": "Platform:1"}, {"name": "Platform:2"}, {"name": "Platform:3"} ]
     }
   ]
 }
