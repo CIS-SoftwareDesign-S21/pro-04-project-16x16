@@ -23,7 +23,6 @@ import project_16x16.projectiles.ProjectileObject;
 import project_16x16.scene.gameplaymodes.GameplayMode;
 
 public class StartStoryScene extends PScene{
-    SideScroller sidescroller;
     int numLoadingFrames = 145;  // The number of frames in the loading gif file
     int currentLoadingFrame = 0;
     PImage[] loadingImages = new PImage[numLoadingFrames];
@@ -34,22 +33,26 @@ public class StartStoryScene extends PScene{
 
     public StartStoryScene(SideScroller a, String level) {
         super(a);
-        this.sidescroller=a;
         for(int i = 0; i < numLoadingFrames; i++) {
-            //This is used to load the images using regex instead of mannually writing
-            //the file postfix from 001 to 145
-            String imageName = "Art/loading/frame_" + this.sidescroller.nf(i, 3) + ".gif";
+            /**This is used to load the images using regex instead of mannually writing
+             * the file postfix from 001 to 145
+             */
+            String imageName = "Art/loading/frame_" + a.nf(i, 3) + ".gif";
             loadingImages[i] = loadImage(imageName);
         }
         level1String=level;
-        playscene = new GameplayScene(this.sidescroller, level1String);
+        playscene = new GameplayScene(a, level1String);
         playscene.changeMode(GameplayScene.GameModes.PLAY);
     }
 
     @Override
     public void draw() {
-        //This is a very plain setup to connect the loading animation to the start of the game
-        //Change to setup later
+        /**
+         * This is a very plain setup to connect the loading animation to the start of the game.
+         * By default the framerate inside a Papplet draw() is 60/s, the loading gif takes about
+         * 2 seconds, so we have the counter to be set at 120.
+         * Improvements can be done later
+         */
         if(counter <120 ){
             background(0);
             currentLoadingFrame = (currentLoadingFrame+1)%numLoadingFrames;
@@ -57,6 +60,7 @@ public class StartStoryScene extends PScene{
             counter++;
         }
         if(counter >= 120) {
+            applet.camera.setFollowObject(this.playscene.getPlayer());
             this.playscene.draw();
         }
     }
