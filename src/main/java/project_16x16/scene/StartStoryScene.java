@@ -11,6 +11,7 @@ import java.util.Arrays;
 import processing.core.*;
 import processing.data.JSONArray;
 import processing.data.JSONObject;
+import project_16x16.Options;
 import project_16x16.SideScroller;
 import project_16x16.Tileset;
 import project_16x16.Utility;
@@ -42,6 +43,7 @@ public class StartStoryScene extends PScene{
         }
         level1String=level;
         playscene = new GameplayScene(a, level1String);
+        a.getGame().getPlayer().pos=this.playscene.getPlayer().pos;
         playscene.changeMode(GameplayScene.GameModes.PLAY);
     }
 
@@ -65,8 +67,23 @@ public class StartStoryScene extends PScene{
         }
     }
 
+    @Override
+    protected void keyReleased(processing.event.KeyEvent e) {
+        switch (e.getKeyCode()) { // Global gameplay hotkeys
+            case PConstants.ESC : // Pause
+                applet.swapToScene(SideScroller.GameScenes.PAUSE_MENU);
+                break;
+            default :
+                break;
+        }
+
+        this.playscene.currentMode.keyReleasedEvent(e);
+    }
 
 
+    public GameplayScene getPlayscene() {
+        return this.playscene;
+    }
 }
 
 
