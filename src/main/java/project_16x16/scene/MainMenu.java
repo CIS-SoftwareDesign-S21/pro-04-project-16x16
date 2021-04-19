@@ -122,7 +122,7 @@ public final class MainMenu extends PScene {
 
 		pressStory.update();
 		if (pressStory.hover()){
-			System.out.println("STORY MODE ENGAGED -- STUB FOR ACTUAL STORY MODE");
+			game.swapToScene(GameScenes.STORY_MODE);
 		}
 	}
 

@@ -76,10 +76,12 @@ public class SideScroller extends PApplet {
 	private static MultiplayerHostMenu mHostMenu;
 	private static MultiplayerClientMenu mClientMenu;
 	private static AudioSettings audioSettings;
+	private static StartStoryScene story;
+
 
 	public enum GameScenes {
 		MAIN_MENU(menu), GAME(game), PAUSE_MENU(pmenu), SETTINGS_MENU(settings), MULTIPLAYER_MENU(mMenu),
-		HOST_MENU(mHostMenu), CLIENT_MENU(mClientMenu), AUDIO_SETTINGS(audioSettings);
+		HOST_MENU(mHostMenu), CLIENT_MENU(mClientMenu), AUDIO_SETTINGS(audioSettings), STORY_MODE(story);
 
 		PScene scene;
 
@@ -189,8 +191,8 @@ public class SideScroller extends PApplet {
 		AnimationComponent.assignApplet(this);
 		Notifications.assignApplet(this);
 		Audio.assignApplet(this);
-		Audio.setGainBGM(-6); // TODO
-		Audio.setGainSFX(-6); // TODO
+		Audio.setGainBGM(-50); // TODO
+		Audio.setGainSFX(-50); // TODO
 
 		// Create scene
 		sceneHistory = new ArrayDeque<>();
@@ -203,6 +205,7 @@ public class SideScroller extends PApplet {
 		mHostMenu = new MultiplayerHostMenu(this);
 		mClientMenu = new MultiplayerClientMenu(this);
 		audioSettings = new AudioSettings(this);
+		story = new StartStoryScene(this, Constants.LEVEL_1);
 		swapToScene(GameScenes.MAIN_MENU);
 
 		// Camera
@@ -240,6 +243,7 @@ public class SideScroller extends PApplet {
 				sceneHistory.push(newScene);
 				newScene.getScene().switchTo();
 				sceneSwapTime = frameCount;
+				story.setCounter(0);
 			}
 		}
 	}
@@ -594,6 +598,9 @@ public class SideScroller extends PApplet {
 		}
 	}
 
+	public GameplayScene getGame() {
+		return this.game;
+	}
 	@Override
 	public void exit() {
 //		super.exit(); // commented-out - prevents ESC from closing game
