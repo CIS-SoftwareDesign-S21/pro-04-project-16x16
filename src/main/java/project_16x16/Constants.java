@@ -28,6 +28,11 @@ public final class Constants {
 	 */
 	public static final String DEV_LEVEL = "Storage/Game/Maps/gg-2.dat";
 
+	//game playing levels
+	public static final String LEVEL1 = "Storage/Game/Maps/save/level1.dat";
+	public static final String LEVEL2 = "Storage/Game/Maps/save/level2.dat";
+	public static final String LEVEL3 = "Storage/Game/Maps/save/level3.dat";
+
 	/**
 	 * Colours
 	 * @author micycle1
