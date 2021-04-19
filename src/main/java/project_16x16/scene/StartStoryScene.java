@@ -11,10 +11,7 @@ import java.util.Arrays;
 import processing.core.*;
 import processing.data.JSONArray;
 import processing.data.JSONObject;
-import project_16x16.Options;
-import project_16x16.SideScroller;
-import project_16x16.Tileset;
-import project_16x16.Utility;
+import project_16x16.*;
 import project_16x16.entities.Player;
 import project_16x16.objects.BackgroundObject;
 import project_16x16.objects.CollidableObject;
@@ -55,15 +52,16 @@ public class StartStoryScene extends PScene{
          * 2 seconds, so we have the counter to be set at 120.
          * Improvements can be done later
          */
-        if(counter <120 ){
+        if(counter <145 ){
             background(0);
             currentLoadingFrame = (currentLoadingFrame+1)%numLoadingFrames;
-            image(loadingImages[(currentLoadingFrame) % numLoadingFrames], 5, 15);
+            image(loadingImages[(currentLoadingFrame) % numLoadingFrames], applet.camera.getPosition().x, applet.camera.getPosition().y);
             counter++;
         }
-        if(counter >= 120) {
+        if(counter >= 145) {
             applet.camera.setFollowObject(this.playscene.getPlayer());
             this.playscene.draw();
+            checkWinningPosition();
         }
     }
 
@@ -83,6 +81,19 @@ public class StartStoryScene extends PScene{
 
     public GameplayScene getPlayscene() {
         return this.playscene;
+    }
+
+    public void setCounter(int x) {
+        this.counter=x;
+    }
+
+    public void drawUI() {
+        this.playscene.currentMode.updateGUI();
+    }
+
+    public void checkWinningPosition() {
+        if(this.playscene.getPlayer().pos.x==-612 && this.playscene.getPlayer().pos.y==160)
+            this.playscene.loadLevel(Constants.DEV_LEVEL);
     }
 }
 

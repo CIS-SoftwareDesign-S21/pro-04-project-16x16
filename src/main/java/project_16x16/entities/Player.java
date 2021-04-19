@@ -165,6 +165,7 @@ public final class Player extends EditableObject {
 
 		if (pos.y > 2000) { // out of bounds check
 			pos.set(0, -100); // TODO set to spawn loc PVector
+			this.life--;
 			velocity.mult(0);
 		}
 		
