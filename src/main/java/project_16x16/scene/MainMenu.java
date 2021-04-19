@@ -50,18 +50,18 @@ public final class MainMenu extends PScene {
 		pressSettings = new Button(a);
 		pressStory = new Button(a);
 
-		pressStart.setText("Level Editor");
-		pressStart.setPosition(applet.width / 2, applet.height / 2);
+		pressStart.setText("Start Game");
+		pressStart.setPosition(applet.width / 2, applet.height / 2 - 240);
 		pressStart.setSize(300, 100);
 		pressStart.setTextSize(40);
 
 		pressStory.setText("Story Mode");
-		pressStory.setPosition(applet.width / 2, applet.height / 2 - 240);
+		pressStory.setPosition(applet.width / 2, applet.height / 2 - 120);
 		pressStory.setSize(300, 100);
 		pressStory.setTextSize(40);
 
 		pressMultiplayer.setText("Multiplayer");
-		pressMultiplayer.setPosition(applet.width / 2, applet.height / 2 -120);
+		pressMultiplayer.setPosition(applet.width / 2, applet.height / 2);
 		pressMultiplayer.setSize(300, 100);
 		pressMultiplayer.setTextSize(40);
 
