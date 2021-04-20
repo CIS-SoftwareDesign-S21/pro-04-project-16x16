@@ -77,6 +77,8 @@ public class SideScroller extends PApplet {
     private static MultiplayerClientMenu mClientMenu;
     private static AudioSettings audioSettings;
     private static StartStoryScene story;
+    private static GraphicSettings graphicSettings;
+    private static ConfigureControls configureControls;
 
 
     public enum GameScenes {
@@ -205,6 +207,8 @@ public class SideScroller extends PApplet {
         mHostMenu = new MultiplayerHostMenu(this);
         mClientMenu = new MultiplayerClientMenu(this);
         audioSettings = new AudioSettings(this);
+        graphicSettings = new GraphicSettings(this);
+        configureControls = new ConfigureControls(this);
         story = new StartStoryScene(this, Constants.LEVEL_1);
         swapToScene(GameScenes.MAIN_MENU);
 
