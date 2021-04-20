@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/ui/CountdownClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/ui/CountdownClock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/SideScroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/SideScroller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +68,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,7 +79,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CountdownClock">
+  <component name="RunManager" selected="Application.SideScroller">
     <configuration name="CountdownClock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="project_16x16.ui.CountdownClock" />
       <module name="Project_16x16" />
@@ -118,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CountdownClock" />
         <item itemvalue="Application.SideScroller" />
+        <item itemvalue="Application.CountdownClock" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +138,7 @@
       <workItem from="1617221847832" duration="2287000" />
       <workItem from="1617815330806" duration="1436000" />
       <workItem from="1618425290968" duration="3875000" />
-      <workItem from="1618871905656" duration="3639000" />
+      <workItem from="1618871905656" duration="5065000" />
     </task>
     <task id="LOCAL-00001" summary="My github Test">
       <created>1617143954995</created>
