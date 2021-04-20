@@ -494,7 +494,6 @@ public class SideScroller extends PApplet {
 		textSize(18);
 
 		textAlign(LEFT, TOP);
-		
 		fill(255, 0, 0);
 		text("Player Pos:", width - labelPadding, lineOffset * 0 + yOffset);
 		text("Player Speed:", width - labelPadding, lineOffset * 1 + yOffset);
