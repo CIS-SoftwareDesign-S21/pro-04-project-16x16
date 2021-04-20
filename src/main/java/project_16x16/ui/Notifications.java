@@ -17,7 +17,8 @@ import project_16x16.Utility;
  * 
  * @author micycle1
  */
-public class Notifications {
+public class
+Notifications {
 
 	private static final LinkedList<Notifications> notifications = new LinkedList<>();
 	private static PImage background;

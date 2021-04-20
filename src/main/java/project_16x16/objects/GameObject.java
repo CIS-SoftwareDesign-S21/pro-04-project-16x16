@@ -2,6 +2,7 @@ package project_16x16.objects;
 
 import java.util.ArrayList;
 
+import processing.core.PVector;
 import project_16x16.components.AnimationComponent;
 import processing.core.PImage;
 import processing.data.JSONObject;
@@ -28,7 +29,51 @@ public class GameObject extends EditableObject {
 		animation = new AnimationComponent();
 	}
 
+	public GameObject(SideScroller a, GameplayScene g, int w, int h, int x, int y) {
+		this(a, g);
+
+		// Get From Game Graphics Image
+		pos = new PVector(x, y);
+		width = w;
+		height = h;
+	}
+	public GameObject(SideScroller a, GameplayScene g, String id, int x, int y) {
+		this(a, g);
+
+		pos = new PVector(x, y);
+		setGraphic(id);
+	}
+
+	public void setGraphic(String name) {
+		image = Tileset.getTile(name);
+		id = name;
+		width = image.width;
+		height = image.height;
+	}
+
+	@Override
 	public void display() {
+		float pixelOffsetX = 0;
+		float pixelOffsetY = 0;
+
+		if (height / 4 % 2 != 0) {
+			pixelOffsetY = 2;
+		}
+		if (width / 4 % 2 != 0) {
+			pixelOffsetX = 2;
+		}
+
+		applet.image(image, pos.x + pixelOffsetX, pos.y + pixelOffsetY, width, height);
+
+	}
+
+	// WARNING: This can distort images
+	public void setImageWidth(int w) {
+		width = w;
+	}
+
+	public void setImageHeight(int h) {
+		height = h;
 	}
 
 	public void update() {

@@ -44,6 +44,7 @@ public class Tileset {
 		try {
 			loadTiles();
 		} catch (Exception e) {
+			e.printStackTrace();
 			System.err.println("Could not load tile data. Exiting...");
 			System.exit(0);
 		}
