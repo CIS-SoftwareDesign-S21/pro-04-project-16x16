@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/SideScroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/SideScroller.java" afterDir="false" />
-    </list>
+    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,12 +30,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="CountdownClock" />
-                    <option name="lastUsedInstant" value="1618340671" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1618885071" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1618340670" />
+                    <option name="branchName" value="CountdownClock" />
+                    <option name="lastUsedInstant" value="1618340671" />
                   </RecentBranch>
                 </list>
               </option>
