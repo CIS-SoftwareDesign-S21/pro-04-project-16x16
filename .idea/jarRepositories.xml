@@ -7,11 +7,6 @@
       <option name="url" value="file:///C:/Users/Temmy/Documents/GitHub/pro-04-project-16x16/lib" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="lib" />
-      <option name="name" value="lib" />
-      <option name="url" value="file:///C:/Users/18aka/IdeaProjects/pro-04-project-16x16/lib" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
