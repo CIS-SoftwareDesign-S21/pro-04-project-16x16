@@ -7,15 +7,7 @@
     <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/SideScroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/SideScroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/StartStoryScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/StartStoryScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Storage/Game/Maps/save/levEl1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Storage/Game/Maps/save/levEl1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/Constants$Colors.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/Constants$Colors.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$GameScenes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$GameScenes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$debugType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$debugType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/MainMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/ui/Notifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/ui/Notifications.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

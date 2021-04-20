@@ -313,7 +313,7 @@ public class SideScroller extends PApplet {
      */
     private void drawAboveCamera() {
         sceneHistory.peek().getScene().drawUI();
-        textSize(36);
+        textSize(54);
         text(clock.timeToString(), width/2, 10);
         Notifications.run();
         if (debug == debugType.ALL) {
