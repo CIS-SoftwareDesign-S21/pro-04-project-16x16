@@ -19,6 +19,7 @@ import project_16x16.objects.EditableObject;
 import project_16x16.objects.GameObject;
 import project_16x16.projectiles.ProjectileObject;
 import project_16x16.scene.gameplaymodes.GameplayMode;
+import project_16x16.ui.CountdownClock;
 
 public class StartStoryScene extends PScene{
     int numLoadingFrames = 145;  // The number of frames in the loading gif file
@@ -42,6 +43,7 @@ public class StartStoryScene extends PScene{
         playscene = new GameplayScene(a, level1String);
         a.getGame().getPlayer().pos=this.playscene.getPlayer().pos;
         playscene.changeMode(GameplayScene.GameModes.PLAY);
+        a.clock = new CountdownClock(0);
     }
 
     @Override
