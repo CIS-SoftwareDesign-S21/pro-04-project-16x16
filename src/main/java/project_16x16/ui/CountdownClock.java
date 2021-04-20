@@ -45,7 +45,7 @@ public class CountdownClock {
         startTime = System.currentTimeMillis();
         paused = false;
     }
-    public String timeToString(){
+    public String timeToString(){ //fetches time remaining, or time elapsed, then converts it to formatted string
         long displayTime;
         if (hasTimeLimit()){
             displayTime = timeRemaining();
@@ -55,7 +55,7 @@ public class CountdownClock {
         }
         return formatString(displayTime);
     }
-    private String formatString(long displayTime){
+    private String formatString(long displayTime){ //formats time string in form 0:00
         String tStr = "";
         if (displayTime >= 60) {
             tStr += (displayTime / 60) + ":";
