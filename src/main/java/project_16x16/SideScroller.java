@@ -24,6 +24,7 @@ import project_16x16.entities.Player;
 import project_16x16.multiplayer.Multiplayer;
 import project_16x16.scene.*;
 import project_16x16.scene.GameplayScene.GameModes;
+import project_16x16.ui.CountdownClock;
 import project_16x16.ui.Notifications;
 
 /**
@@ -63,7 +64,8 @@ public class SideScroller extends PApplet {
     // via options
     // Font Resources
     private static PFont font_pixel;
-
+    // Clock
+    public CountdownClock clock;
     // Scenes
     private ArrayDeque<GameScenes> sceneHistory;
     private int sceneSwapTime = 0;
@@ -211,7 +213,6 @@ public class SideScroller extends PApplet {
         configureControls = new ConfigureControls(this);
         story = new StartStoryScene(this, Constants.LEVEL_1);
         swapToScene(GameScenes.MAIN_MENU);
-
         // Camera
         camera = new Camera(this);
         camera.setMouseMask(CONTROL);
@@ -312,6 +313,8 @@ public class SideScroller extends PApplet {
      */
     private void drawAboveCamera() {
         sceneHistory.peek().getScene().drawUI();
+        textSize(54);
+        text(clock.timeToString(), width/2, 10);
         Notifications.run();
         if (debug == debugType.ALL) {
             camera.post();
@@ -500,9 +503,11 @@ public class SideScroller extends PApplet {
         noStroke();
         rectMode(CORNER);
         rect(width - labelPadding, 0, labelPadding, yOffset + lineOffset * 25);
+
         textSize(18);
 
         textAlign(LEFT, TOP);
+
 
         fill(255, 0, 0);
         text("Player Pos:", width - labelPadding, lineOffset * 0 + yOffset);
