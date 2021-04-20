@@ -24,7 +24,7 @@ public class StartStoryScene extends PScene{
     int numLoadingFrames = 145;  // The number of frames in the loading gif file
     int currentLoadingFrame = 0;
     PImage[] loadingImages = new PImage[numLoadingFrames];
-    private final String level1String;
+    private String currentlevel;
     private GameplayScene playscene;
     private boolean isSingleplayer = true; // true by default
     int counter = 0;
@@ -38,8 +38,8 @@ public class StartStoryScene extends PScene{
             String imageName = "Art/loading/frame_" + a.nf(i, 3) + ".gif";
             loadingImages[i] = loadImage(imageName);
         }
-        level1String=level;
-        playscene = new GameplayScene(a, level1String);
+        currentlevel=level;
+        playscene = new GameplayScene(a, currentlevel);
         a.getGame().getPlayer().pos=this.playscene.getPlayer().pos;
         playscene.changeMode(GameplayScene.GameModes.PLAY);
     }
@@ -48,8 +48,8 @@ public class StartStoryScene extends PScene{
     public void draw() {
         /**
          * This is a very plain setup to connect the loading animation to the start of the game.
-         * By default the framerate inside a Papplet draw() is 60/s, the loading gif takes about
-         * 2 seconds, so we have the counter to be set at 120.
+         * The loading gif contains 145 static images so we set the counter variable to 145,
+         * when it finishes with all the iteration of images, it starts the new level map.
          * Improvements can be done later
          */
         if(counter <145 ){
@@ -92,8 +92,36 @@ public class StartStoryScene extends PScene{
     }
 
     public void checkWinningPosition() {
-        if(this.playscene.getPlayer().pos.x==-612 && this.playscene.getPlayer().pos.y==160)
-            this.playscene.loadLevel(Constants.DEV_LEVEL);
+//        if(this.playscene.getPlayer().pos.x==-612 && this.playscene.getPlayer().pos.y==160)
+//                    this.playscene.loadLevel(Constants.DEV_LEVEL);
+//        System.out.println(this.currentlevel);
+//        System.out.println(Constants.LEVEL1);
+//        System.out.println(Constants.LEVEL2);
+//        System.out.println(Constants.LEVEL3);
+        switch(this.currentlevel){
+            case Constants.LEVEL1:
+                if(this.playscene.getPlayer().pos.x==-612 && this.playscene.getPlayer().pos.y==160) {
+                    this.playscene.loadLevel(Constants.LEVEL2);
+                    this.playscene.getPlayer().pos.set(100, 20);
+                    this.currentlevel=Constants.LEVEL2;
+                }
+                break;
+            case Constants.LEVEL2:
+                if(this.playscene.getPlayer().pos.x==3044 && this.playscene.getPlayer().pos.y==544) {
+                    this.playscene.loadLevel(Constants.LEVEL3);
+                    this.playscene.getPlayer().pos.set(-216, -96);
+                    this.currentlevel=Constants.LEVEL3;
+                }
+                break;
+            case Constants.LEVEL3:
+                if(this.playscene.getPlayer().pos.x==1348 && this.playscene.getPlayer().pos.y==-288) {
+
+                }
+                break;
+            default:
+                break;
+        }
+
     }
 }
 
