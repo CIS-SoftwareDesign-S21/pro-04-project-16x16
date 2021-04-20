@@ -14,7 +14,7 @@
     <remote-repository>
       <option name="id" value="lib" />
       <option name="name" value="lib" />
-      <option name="url" value="file://$USER_HOME$/2021%20Spring%20/Software%20Design/pro-04-project-16x16/lib" />
+      <option name="url" value="file:///C:/Users/hejix/Documents/GitHub/pro-04-project-16x16/lib" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -25,6 +25,11 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="lib" />
+      <option name="name" value="lib" />
+      <option name="url" value="file://$USER_HOME$/2021%20Spring%20/Software%20Design/pro-04-project-16x16/lib" />
     </remote-repository>
   </component>
 </project>
