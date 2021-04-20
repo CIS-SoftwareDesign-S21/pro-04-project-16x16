@@ -1,5 +1,6 @@
 package project_16x16.windows;
 
+import project_16x16.objects.GameObject;
 import project_16x16.scene.GameplayScene;
 import project_16x16.scene.GameplayScene.GameModes;
 import project_16x16.PClass;
@@ -22,6 +23,7 @@ public class LoadLevelWindow extends PClass {
 
 	ArrayList<CollidableObject> collidableObjects;
 	ArrayList<BackgroundObject> backgroundObjects;
+	ArrayList<GameObject> gameObjects;
 	final String path = "src/main/resources/Storage/Game/Maps/save/";
 	String picked;
 	// Map editor Scene
@@ -34,6 +36,7 @@ public class LoadLevelWindow extends PClass {
 		super(a);
 		collidableObjects = new ArrayList<CollidableObject>();
 		backgroundObjects = new ArrayList<BackgroundObject>();
+		gameObjects = new ArrayList<GameObject>();
 		picked = "";
 		this.scene = scene;
 		f = new File(path);
@@ -125,6 +128,7 @@ public class LoadLevelWindow extends PClass {
 		int maxX = Integer.MIN_VALUE;
 		collidableObjects.clear();
 		backgroundObjects.clear();
+		gameObjects.clear();
 		// check for boundaries
 		for (int i = 0; i < data.size(); i++) {
 			JSONObject item = data.getJSONObject(i);
@@ -169,6 +173,22 @@ public class LoadLevelWindow extends PClass {
 				backgroundObject.pos.y = PApplet.map(item.getInt("y"), minY + 100, maxY - 100, 300, 600);
 				backgroundObjects.add(backgroundObject); // SideScrollerend To Level
 				break;
+			case "OBJECT":
+				GameObject gameObject = new GameObject(applet, scene);
+				try {
+					gameObject.setGraphic(item.getString("id"));
+				} catch (Exception e) {
+					gameObject.width = 64;
+					gameObject.height = 64;
+				}
+				gameObject.setImageWidth(20);
+
+				gameObject.setImageHeight(20);
+				gameObject.pos.x = PApplet.map(item.getInt("x"), minX + 100, maxX - 100, 300, 600);
+				gameObject.pos.y = PApplet.map(item.getInt("y"), minY + 100, maxY - 100, 300, 600);
+
+				gameObjects.add(gameObject); // SideScrollerend To Level
+				break;
 			default:
 				break;
 			}
@@ -181,6 +201,9 @@ public class LoadLevelWindow extends PClass {
 		}
 		for (int i = 0; i < backgroundObjects.size(); i++) {
 			backgroundObjects.get(i).display();
+		}
+		for (int i = 0; i < gameObjects.size(); i++) {
+			gameObjects.get(i).display();
 		}
 	}
 

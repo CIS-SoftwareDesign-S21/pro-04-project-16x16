@@ -200,7 +200,7 @@ public class GameplayScene extends PScene {
 	public void switchTo() {
 		super.switchTo();
 		((PauseMenu) GameScenes.PAUSE_MENU.getScene()).switched = false;
-		Audio.play(BGM.TEST1, -10);
+		Audio.play(BGM.TEST1, -50);
 	}
 	
 	/**
@@ -776,5 +776,4 @@ public class GameplayScene extends PScene {
 			}
 		}
 	}
-
 }

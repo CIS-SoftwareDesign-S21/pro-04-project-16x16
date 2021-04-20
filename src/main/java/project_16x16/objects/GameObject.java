@@ -67,6 +67,14 @@ public class GameObject extends EditableObject {
 
 	}
 
+	// WARNING: This can distort images
+	public void setImageWidth(int w) {
+		width = w;
+	}
+
+	public void setImageHeight(int h) {
+		height = h;
+	}
 
 	public void update() {
 	}

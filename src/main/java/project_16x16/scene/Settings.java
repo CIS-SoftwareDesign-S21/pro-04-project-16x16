@@ -108,10 +108,24 @@ public class Settings extends PScene {
 		if (apply.hover()) {
 			//game.resizeWindow(windowSizeX.getValue(), 720); // TODO change
 			Notifications.addNotification("Options Applied", "Your configuration has been successfully applied.");
+			game.returnScene();
 			return;
 		}
 		if (pressSoundOptions.hover()) {
 			game.swapToScene(GameScenes.AUDIO_SETTINGS);
+			//game.returnScene();
+			return;
+
+		}
+		if (pressGraphicsOptions.hover()) {
+			game.swapToScene(GameScenes.GRAPHIC_SETTINGS);
+			//game.returnScene();
+			return;
+		}
+		if (pressControlsOptions.hover()) {
+			game.swapToScene(GameScenes.CONFIGURE_CONTROLS);
+			//game.returnScene();
+			return;
 		}
 	}
 

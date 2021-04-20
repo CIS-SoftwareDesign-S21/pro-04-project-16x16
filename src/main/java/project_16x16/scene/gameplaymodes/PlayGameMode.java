@@ -41,4 +41,5 @@ public class PlayGameMode extends GameplayMode {
 	public void updateGUI() {
 		localPlayer.displayLife();
 	}
+
 }

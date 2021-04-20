@@ -17,7 +17,8 @@ import project_16x16.Utility;
  * 
  * @author micycle1
  */
-public class Notifications {
+public class
+Notifications {
 
 	private static final LinkedList<Notifications> notifications = new LinkedList<>();
 	private static PImage background;
@@ -114,7 +115,7 @@ public class Notifications {
 		game.image(background, position.x, position.y);
 		game.textSize(18);
 		// @formatter:off
-		game.text("Notification: " + title,
+		game.text("How to play: " + title,
 				position.x + notificationTextPadding,
 				position.y + notificationTextPadding,
 				notificationWidth - notificationTextPadding, 
