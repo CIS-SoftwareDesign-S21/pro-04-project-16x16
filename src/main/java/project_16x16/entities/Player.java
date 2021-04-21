@@ -253,12 +253,6 @@ public final class Player extends EditableObject {
 				CollidableObject collision = (CollidableObject) o;
 				if (Utility.fastInRange(pos, collision.pos, collisionRange)) { // In Player Range
 
-					// This checks if the object the player with is deadly can be changed to search for the id
-					// in an array of deadly objects, but for now Spikes will do
-					if(o.id.equals("Spikes")){
-						die();
-					}
-
 					if (applet.debug == debugType.ALL) {
 						applet.strokeWeight(2);
 						applet.rect(collision.pos.x, collision.pos.y, collision.width, collision.height);
@@ -292,6 +286,11 @@ public final class Player extends EditableObject {
 							state.jumping = false;
 						}
 						velocity.y = 0;
+						// This checks if the object the player with is deadly can be changed to search for the id
+						// in an array of deadly objects, but for now Spikes will do
+						if(o.id.equals("Spikes")){
+							die();
+						}
 					}
 				}
 			}
