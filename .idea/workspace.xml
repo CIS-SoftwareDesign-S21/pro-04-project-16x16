@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="" />
+    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/StartStoryScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/StartStoryScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Art/ending/frame_000.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Art/ending/frame_001.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Art/ending/frame_002.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/Constants$Colors.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/Constants$Colors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$GameScenes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$GameScenes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$debugType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$debugType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/StartStoryScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/StartStoryScene.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

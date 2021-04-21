@@ -19,8 +19,6 @@ public final class Constants {
 	public static final float CAMERA_ZOOM_MIN = 0.3f;
 	public static final float GAME_GRAVITY = 1;
 
-	public static final String LEVEL_1 = "Storage/Game/Maps/save/levEl1.dat";
-
 	public static final String GAME_FONT = "Font/font-pixel-48.vlw";
 	
 	/**
@@ -29,8 +27,8 @@ public final class Constants {
 	public static final String DEV_LEVEL = "Storage/Game/Maps/gg-2.dat";
 
 	//game playing levels
-	public static final String LEVEL1 = "Storage/Game/Maps/save/level1.dat";
-	public static final String LEVEL2 = "Storage/Game/Maps/save/level2.dat";
+	public static final String LEVEL1 = "Storage/Game/Maps/save/levEl1.dat";
+	public static final String LEVEL2 = "Storage/Game/Maps/save/LEVEL2.dat";
 	public static final String LEVEL3 = "Storage/Game/Maps/save/level3.dat";
 
 	/**
