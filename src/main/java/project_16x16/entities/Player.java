@@ -164,9 +164,7 @@ public final class Player extends EditableObject {
 		chooseAnimation();
 
 		if (pos.y > 2000) { // out of bounds check
-			pos.set(0, -100); // TODO set to spawn loc PVector
-			this.life--;
-			velocity.mult(0);
+			die();
 		}
 		
 		if (applet.debug == debugType.ALL) {
@@ -175,6 +173,15 @@ public final class Player extends EditableObject {
 			applet.strokeWeight(1);
 			applet.ellipse(pos.x, pos.y, collisionRange * 2, collisionRange * 2);
 		}
+	}
+
+	/**
+	 * Helper function to handle player deaths more easily
+	 */
+	public void die(){
+		pos.set(0, -100); // TODO set to spawn loc PVector
+		this.life--;
+		velocity.mult(0);
 	}
 
 	/**
