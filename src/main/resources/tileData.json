@@ -220,7 +220,7 @@
 
     {"name": "MIRROR_BOX", "x": 21, "y": 10, "type": "OBJECT"},
     {"name": "MAGIC_SOURCE", "x": 13, "y": 16, "type": "OBJECT"},
-    {"name": "Spikes", "x": 12, "y": 2, "type": "BACKGROUND"},
+    {"name": "Spikes", "x": 12, "y": 2, "type": "COLLISION"},
     
     {"name": "Door", "x": 0, "y": 6, "type": "OBJECT"},
     {"name": "Platform:0", "x": 0, "y": 11, "type": "OBJECT"},
