@@ -175,10 +175,10 @@ public class ConfigureControls extends PScene {
 
         }
         if (pressGraphicsOptions.hover()) {
-            game.swapToScene(GameScenes.GRAPHIC_SETTINGS);
+//            game.swapToScene(GameScenes.GRAPHIC_SETTINGS);
         }
         if (pressControlsOptions.hover()) {
-            game.swapToScene(GameScenes.CONFIGURE_CONTROLS);
+//            game.swapToScene(GameScenes.CONFIGURE_CONTROLS);
         }
     }
 

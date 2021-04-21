@@ -288,9 +288,9 @@ public final class Player extends EditableObject {
 						velocity.y = 0;
 						// This checks if the object the player with is deadly can be changed to search for the id
 						// in an array of deadly objects, but for now Spikes will do
-						if(o.id.equals("Spikes")){
-							die();
-						}
+//						if(o.id.equals("Spikes")){
+//							die();
+//						}
 					}
 				}
 			}
