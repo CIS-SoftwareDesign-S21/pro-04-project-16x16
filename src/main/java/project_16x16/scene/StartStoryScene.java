@@ -19,15 +19,20 @@ import project_16x16.objects.EditableObject;
 import project_16x16.objects.GameObject;
 import project_16x16.projectiles.ProjectileObject;
 import project_16x16.scene.gameplaymodes.GameplayMode;
+import project_16x16.SideScroller.GameScenes;
 
 public class StartStoryScene extends PScene{
-    int numLoadingFrames = 145;  // The number of frames in the loading gif file
-    int currentLoadingFrame = 0;
-    PImage[] loadingImages = new PImage[numLoadingFrames];
+    private int numLoadingFrames = 145;  // The number of frames in the loading gif file
+    private int currentLoadingFrame = 0;
+    private int numEndingFrames=3;
+    private int currentEndingFrame=0;
+    private PImage[] loadingImages = new PImage[numLoadingFrames];
+    private PImage[] endingImages = new PImage[numEndingFrames];
     private String currentlevel;
     private GameplayScene playscene;
     private boolean isSingleplayer = true; // true by default
-    int counter = 0;
+    private int counter = 0;
+    private int endCounter = 120;
 
     public StartStoryScene(SideScroller a, String level) {
         super(a);
@@ -37,6 +42,10 @@ public class StartStoryScene extends PScene{
              */
             String imageName = "Art/loading/frame_" + a.nf(i, 3) + ".gif";
             loadingImages[i] = loadImage(imageName);
+        }
+        for(int j =0; j<numEndingFrames; j++) {
+            String imageName = "Art/ending/frame_" + a.nf(j, 3) + ".gif";
+            endingImages[j] = loadImage(imageName);
         }
         currentlevel=level;
         playscene = new GameplayScene(a, currentlevel);
@@ -62,6 +71,9 @@ public class StartStoryScene extends PScene{
             applet.camera.setFollowObject(this.playscene.getPlayer());
             this.playscene.draw();
             checkWinningPosition();
+            if(endCounter==0) {
+                applet.swapToScene(GameScenes.MAIN_MENU);
+            }
         }
     }
 
@@ -71,11 +83,19 @@ public class StartStoryScene extends PScene{
             case PConstants.ESC : // Pause
                 applet.swapToScene(SideScroller.GameScenes.PAUSE_MENU);
                 break;
+            case 49 : // 1
+                break;
+            case 50 : // 2
+                break;
+            case 51 : // 3
+                break;
+            case 52 : // 4
+                break;
+            case 54 : // 6
+                break;
             default :
                 break;
         }
-
-        this.playscene.currentMode.keyReleasedEvent(e);
     }
 
 
@@ -92,12 +112,6 @@ public class StartStoryScene extends PScene{
     }
 
     public void checkWinningPosition() {
-//        if(this.playscene.getPlayer().pos.x==-612 && this.playscene.getPlayer().pos.y==160)
-//                    this.playscene.loadLevel(Constants.DEV_LEVEL);
-//        System.out.println(this.currentlevel);
-//        System.out.println(Constants.LEVEL1);
-//        System.out.println(Constants.LEVEL2);
-//        System.out.println(Constants.LEVEL3);
         switch(this.currentlevel){
             case Constants.LEVEL1:
                 if(this.playscene.getPlayer().pos.x==-612 && this.playscene.getPlayer().pos.y==160) {
@@ -115,13 +129,15 @@ public class StartStoryScene extends PScene{
                 break;
             case Constants.LEVEL3:
                 if(this.playscene.getPlayer().pos.x==1348 && this.playscene.getPlayer().pos.y==-288) {
-
+                    background(0);
+                    currentEndingFrame = (currentEndingFrame+1)%numEndingFrames;
+                    image(endingImages[(currentEndingFrame) % numEndingFrames], applet.camera.getPosition().x, applet.camera.getPosition().y);
+                    this.endCounter--;
                 }
                 break;
             default:
                 break;
         }
-
     }
 }
 
