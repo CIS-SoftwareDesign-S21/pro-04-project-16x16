@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/processing_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/ConfigureControls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/GraphicSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project_16x16/ui/CountdownClock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/ConfigureControls.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/GraphicSettings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_16x16.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project_16x16.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/Audio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/Options.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/Options.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/SideScroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/SideScroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/AudioSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/AudioSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/StartStoryScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/StartStoryScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/ui/Notifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/ui/Notifications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tileData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tileData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/Constants$Colors.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/Constants$Colors.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$GameScenes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$GameScenes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$debugType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller$debugType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/SideScroller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/entities/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/entities/Player$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/entities/Player$PlayerState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/entities/Player$PlayerState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/entities/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/AudioSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/AudioSettings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/Settings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/ui/Notifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/ui/Notifications.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tileData.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tileData.json" afterDir="false" />
-    </list>
+    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
