@@ -17,8 +17,8 @@ import project_16x16.ui.NumberInputField;
  */
 public class Settings extends PScene {
 	// Window
-	private final int WINDOW_X_POS = (int) applet.gameResolution.x / 2;
-	private final int WINDOW_Y_POS = (int) applet.gameResolution.y / 2;
+	int WINDOW_X_POS = (int) applet.gameResolution.x/2;
+	int WINDOW_Y_POS = (int) applet.gameResolution.y;
 	// Buttons
 	private final int GRAPHICS_Y_OFFSET =  10;
 	private final int SOUND_Y_OFFSET =  50;
@@ -45,26 +45,29 @@ public class Settings extends PScene {
 
 		quit = new Button(a);
 		quit.setText("Quit");
-		quit.setPosition(WINDOW_X_POS, WINDOW_Y_POS + QUIT_Y_OFFSET);
+		quit.setPosition((int) applet.gameResolution.x / 2, (int) ((int) applet.gameResolution.y / 1.25));
 
 		apply = new Button(applet);
 		apply.setText("Apply");
-		apply.setPosition(WINDOW_X_POS, WINDOW_Y_POS + APPLY_Y_OFFSET);
+		apply.setPosition((int) applet.gameResolution.x / 2, (int) ((int) applet.gameResolution.y / 1.5));
 
 		pressGraphicsOptions = new Button(applet);
 		pressGraphicsOptions.setText("Configure Graphics");
-		pressGraphicsOptions.setPosition(WINDOW_X_POS , WINDOW_Y_POS + GRAPHICS_Y_OFFSET);
+		pressGraphicsOptions.setPosition((int) applet.gameResolution.x / 2, (int) ((int) applet.gameResolution.y / 3.5));
 
 		pressSoundOptions = new Button(applet);
 		pressSoundOptions.setText("Configure Audio and Volume");
-		pressSoundOptions.setPosition(WINDOW_X_POS , WINDOW_Y_POS + SOUND_Y_OFFSET);
+		pressSoundOptions.setPosition((int) applet.gameResolution.x / 2, (int) ((int) applet.gameResolution.y / 3));
 
 		pressControlsOptions = new Button(applet);
 		pressControlsOptions.setText("Configure Controls");
-		pressControlsOptions.setPosition(WINDOW_X_POS , WINDOW_Y_POS + CONTROL_Y_OFFSET);
+		pressControlsOptions.setPosition((int) applet.gameResolution.x / 2, (int) ((int) applet.gameResolution.y / 2.5));
 
-		windowSizeX = new NumberInputField(a);
-		windowSizeX.setPosition(WINDOW_X_POS , WINDOW_Y_POS + WINDOWSIZE_Y_OFFSET);
+		/*windowSizeX = new NumberInputField(a);
+		windowSizeX.setPosition((int) applet.gameResolution.x/2 , (int) ((int) applet.gameResolution.y/2));
+
+	}
+		 */
 	}
 
 	@Override
@@ -82,14 +85,17 @@ public class Settings extends PScene {
 		pressSoundOptions.display();
 		pressControlsOptions.display();
 
+		/*
 		OptionText("Graphics Options:", -WINDOW_X_POS / 2 + 50, -WINDOW_Y_POS / 2);
 		OptionText(dynamicPadding("Resolution -", 22), -WINDOW_X_POS / 2 + 50, -WINDOW_Y_POS / 2 + 50);
 		OptionText(dynamicPadding("Aspect Ratio -", 20), -WINDOW_X_POS / 2 + 50, -WINDOW_Y_POS / 2 + 70);
 		OptionText(dynamicPadding("Display Mode -", 20), -WINDOW_X_POS / 2 + 50, -WINDOW_Y_POS / 2 + 90);
 
-		
-		windowSizeX.update();
-		windowSizeX.display();
+
+
+		 */
+		//windowSizeX.update();
+		//windowSizeX.display();
 	}
 
 	@Override
@@ -106,7 +112,6 @@ public class Settings extends PScene {
 			return;
 		}
 		if (apply.hover()) {
-			//game.resizeWindow(windowSizeX.getValue(), 720); // TODO change
 			Notifications.addNotification("Options Applied", "Your configuration has been successfully applied.");
 			game.returnScene();
 			return;

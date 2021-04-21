@@ -7,7 +7,6 @@ import project_16x16.SideScroller;
 import project_16x16.ui.Button;
 import project_16x16.ui.Notifications;
 import project_16x16.SideScroller;
-
 /**
  *
  * @author micycle1
@@ -16,8 +15,8 @@ import project_16x16.SideScroller;
 
 
 public final class GraphicSettings extends PScene {
-    private final int WINDOW_X_POS = (int) applet.gameResolution.x / 2;
-    private final int WINDOW_Y_POS = (int) applet.gameResolution.y / 2;
+    int WINDOW_X_POS = (int) applet.gameResolution.x / 2;
+    int WINDOW_Y_POS = (int) applet.gameResolution.y / 2;
 
 
 
@@ -27,7 +26,9 @@ public final class GraphicSettings extends PScene {
 
     private Button quit;
     private Button apply;
-    private Button Default;
+
+    private Button P1366x768;
+    private Button P1600x900;
     private Button FullScreen;
 
     public GraphicSettings(SideScroller a) {
@@ -44,13 +45,18 @@ public final class GraphicSettings extends PScene {
         quit.setText("Quit");
         quit.setPosition(a.width / 2, 600);
 
-        Default = new Button(a);
-        Default.setText("Default");
-        Default.setPosition(a.width / 3, 250);
+        P1366x768 = new Button(a);
+        P1366x768.setText("1366 x 768p");
+        P1366x768.setPosition(a.width / 3, 250);
+
+
+        P1600x900 = new Button(a);
+        P1600x900.setText("P1600 x 900p");
+        P1600x900.setPosition((int) (a.width /2), 250);
 
         FullScreen = new Button(a);
         FullScreen.setText("FullScreen");
-        FullScreen.setPosition(a.width /3 +425, 250);
+        FullScreen.setPosition((int) (a.width/1.5), 250);
 
     }
 
@@ -65,7 +71,8 @@ public final class GraphicSettings extends PScene {
         game.background(23, 26, 36);
         apply.display();
         quit.display();
-        Default.display();
+        P1366x768.display();
+        P1600x900.display();
         FullScreen.display();
 
         applet.fill(255);
@@ -100,7 +107,8 @@ public final class GraphicSettings extends PScene {
     void mouseReleased(processing.event.MouseEvent e) {
         apply.update();
         quit.update();
-        Default.update();
+        P1366x768.update();
+        P1600x900.update();
         FullScreen.update();
 
         if (quit.hover()) {
@@ -114,12 +122,29 @@ public final class GraphicSettings extends PScene {
             return;
         }
 
-        if(Default.hover()){
+        if(P1366x768.hover()){
             //Options.fullscreen = java.awt.event.KeyEvent.VK_F11;
+            game.resizeWindow(1366,768);
+            game.resizeGameResolution(1366,768);
+            game.frameResized(1366,768);
+
+            //ConfigureControls.resolution(1366,768);
             OptionText(("1"), -WINDOW_X_POS/2 +325, -WINDOW_Y_POS /2+ 75);
             return;
         }
+
+        if(P1600x900.hover()){
+            game.resizeWindow(1600,900);
+            game.resizeGameResolution(1600,900);
+            game.frameResized(1600,900);
+            OptionText(("1"), -WINDOW_X_POS/2 +325, -WINDOW_Y_POS /2+ 75);
+            return;
+        }
+
         if(FullScreen.hover()){
+            game.resizeWindow(1920,1080);
+            game.resizeGameResolution(1920,1080);
+            game.frameResized(1920,1080);
             OptionText(("-1"), -WINDOW_X_POS/2 +325, -WINDOW_Y_POS /2+ 75);
             return;
         }

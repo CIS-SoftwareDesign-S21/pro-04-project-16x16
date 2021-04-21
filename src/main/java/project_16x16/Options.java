@@ -20,6 +20,7 @@ public class Options {
 		moveLeftKey, moveRightKey, jumpKey, dashKey, targetFPS, snapSize, debugMode, gainBGM, gainSFX, muteBGM, muteSFX , testKey;
 	}
 
+	public static int moveLeft;
 	public static int moveLeftKey = options.getInt(option.moveLeftKey.toString(), KeyEvent.VK_A);
 	public static int moveRightKey = options.getInt(option.moveRightKey.toString(), KeyEvent.VK_D);
 	public static int jumpKey = options.getInt(option.jumpKey.toString(), KeyEvent.VK_SPACE);

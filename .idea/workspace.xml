@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/Options.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/Options.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/ConfigureControls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/ConfigureControls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/GraphicSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/GraphicSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/Options.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/Options.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/ConfigureControls.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/ConfigureControls.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/GraphicSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/GraphicSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project_16x16/scene/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project_16x16/scene/Settings.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +60,16 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/project_16x16/Options.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/project_16x16/components/Tile.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/project_16x16/Tileset.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/project_16x16/windows/LoadLevelWindow.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/project_16x16/Audio.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/project_16x16/scene/MainMenu.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/project_16x16/SideScroller.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/project_16x16/components/AnimationComponent.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1qU8N57o6tADffYVEx0fxR25AL1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -76,6 +93,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">

@@ -3,6 +3,7 @@ package project_16x16.scene;
 import processing.core.PConstants;
 import processing.event.KeyEvent;
 import processing.event.MouseEvent;
+import project_16x16.Options;
 import project_16x16.SideScroller;
 import project_16x16.SideScroller.GameScenes;
 import project_16x16.ui.Button;
@@ -50,7 +51,10 @@ public class ConfigureControls extends PScene {
 
     private SideScroller game;
 
+
+
     public ConfigureControls(SideScroller a) {
+
         super(a);
         game = a;
 
@@ -167,19 +171,14 @@ public class ConfigureControls extends PScene {
         if (apply.hover()) {
             //game.resizeWindow(windowSizeX.getValue(), 720); // TODO change
             Notifications.addNotification("Options Applied", "Your configuration has been successfully applied.");
+            if(windowSizeX.getText().equals("A")){
+                Options.moveLeft = 65;
+            }
+
             game.returnScene();
             return;
         }
-        if (pressSoundOptions.hover()) {
-            game.swapToScene(GameScenes.AUDIO_SETTINGS);
 
-        }
-        if (pressGraphicsOptions.hover()) {
-            game.swapToScene(GameScenes.GRAPHIC_SETTINGS);
-        }
-        if (pressControlsOptions.hover()) {
-            game.swapToScene(GameScenes.CONFIGURE_CONTROLS);
-        }
     }
 
     private void displayWindow() {
