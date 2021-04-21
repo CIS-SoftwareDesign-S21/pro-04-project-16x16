@@ -25,14 +25,18 @@ public class StartStoryScene extends PScene{
     private int numLoadingFrames = 145;  // The number of frames in the loading gif file
     private int currentLoadingFrame = 0;
     private int numEndingFrames=3;
+    private int numLosingFrames=37;
     private int currentEndingFrame=0;
+    private int currentLosingFrame=0;
     private PImage[] loadingImages = new PImage[numLoadingFrames];
     private PImage[] endingImages = new PImage[numEndingFrames];
+    private PImage[] losingImages = new PImage[numLosingFrames];
     private String currentlevel;
     private GameplayScene playscene;
     private boolean isSingleplayer = true; // true by default
     private int counter = 0;
     private int endCounter = 120;
+    private int losingCounter = 37;
 
     public StartStoryScene(SideScroller a, String level) {
         super(a);
@@ -46,6 +50,10 @@ public class StartStoryScene extends PScene{
         for(int j =0; j<numEndingFrames; j++) {
             String imageName = "Art/ending/frame_" + a.nf(j, 3) + ".gif";
             endingImages[j] = loadImage(imageName);
+        }
+        for(int t = 0; t<numLosingFrames; t++) {
+            String imageName = "Art/losing/frame_" + a.nf(t, 3) + ".jpg";
+            losingImages[t] = loadImage(imageName);
         }
         currentlevel=level;
         playscene = new GameplayScene(a, currentlevel);
@@ -71,8 +79,27 @@ public class StartStoryScene extends PScene{
             applet.camera.setFollowObject(this.playscene.getPlayer());
             this.playscene.draw();
             checkWinningPosition();
+            if(this.playscene.getPlayer().life==0) {
+                background(0);
+                applet.frameRate(10);
+                currentLosingFrame = (currentLosingFrame+1)%numLosingFrames;
+                image(losingImages[(currentLosingFrame) % numLosingFrames], applet.camera.getPosition().x, applet.camera.getPosition().y);
+                this.losingCounter--;
+                if(losingCounter==0) {
+                    applet.frameRate(60);
+                    losingCounter=37;
+                    this.playscene.getPlayer().life=3;
+                    applet.swapToScene(GameScenes.MAIN_MENU);
+                }
+            }
             if(endCounter==0) {
                 applet.swapToScene(GameScenes.MAIN_MENU);
+                this.currentlevel=Constants.LEVEL1;
+                playscene = new GameplayScene(applet, currentlevel);
+                applet.getGame().getPlayer().pos=this.playscene.getPlayer().pos;
+                playscene.changeMode(GameplayScene.GameModes.PLAY);
+                endCounter=120;
+                this.playscene.getPlayer().life=3;
             }
         }
     }
