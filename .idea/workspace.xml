@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/project_16x16/scene/StartStoryScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project_16x16/scene/StartStoryScene.java" afterDir="false" />
-    </list>
+    <list default="true" id="24c2abe0-2912-4675-99fd-f5508f7919ee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
