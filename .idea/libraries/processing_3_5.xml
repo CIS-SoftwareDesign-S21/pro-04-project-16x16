@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="processing-3.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/processing-3.5.4" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/processing-3.5.4/modes/java/generated" />
+      <root url="file://$USER_HOME$/Desktop/processing-3.5.4/modes/java/libraries/dxf/src" />
+      <root url="file://$USER_HOME$/Desktop/processing-3.5.4/modes/java/libraries/io/src" />
+      <root url="file://$USER_HOME$/Desktop/processing-3.5.4/modes/java/libraries/net/src" />
+      <root url="file://$USER_HOME$/Desktop/processing-3.5.4/modes/java/libraries/pdf/src" />
+      <root url="file://$USER_HOME$/Desktop/processing-3.5.4/modes/java/libraries/serial/src" />
+      <root url="file://$USER_HOME$/Desktop/processing-3.5.4/modes/java/libraries/svg/src" />
+    </SOURCES>
+  </library>
+</component>

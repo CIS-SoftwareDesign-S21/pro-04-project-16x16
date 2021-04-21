@@ -30,7 +30,7 @@ public final class Audio {
 
 		private String filename;
 
-		private BGM(String filename) {
+		BGM(String filename) {
 			this.filename = filename;
 		}
 

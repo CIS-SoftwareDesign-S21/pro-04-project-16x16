@@ -164,9 +164,7 @@ public final class Player extends EditableObject {
 		chooseAnimation();
 
 		if (pos.y > 2000) { // out of bounds check
-			pos.set(0, -100); // TODO set to spawn loc PVector
-			this.life--;
-			velocity.mult(0);
+			die();
 		}
 		
 		if (applet.debug == debugType.ALL) {
@@ -175,6 +173,15 @@ public final class Player extends EditableObject {
 			applet.strokeWeight(1);
 			applet.ellipse(pos.x, pos.y, collisionRange * 2, collisionRange * 2);
 		}
+	}
+
+	/**
+	 * Helper function to handle player deaths more easily
+	 */
+	public void die(){
+		pos.set(0, -100); // TODO set to spawn loc PVector
+		this.life--;
+		velocity.mult(0);
 	}
 
 	/**
@@ -245,6 +252,7 @@ public final class Player extends EditableObject {
 			if (o instanceof CollidableObject) {
 				CollidableObject collision = (CollidableObject) o;
 				if (Utility.fastInRange(pos, collision.pos, collisionRange)) { // In Player Range
+
 					if (applet.debug == debugType.ALL) {
 						applet.strokeWeight(2);
 						applet.rect(collision.pos.x, collision.pos.y, collision.width, collision.height);
@@ -278,6 +286,11 @@ public final class Player extends EditableObject {
 							state.jumping = false;
 						}
 						velocity.y = 0;
+						// This checks if the object the player with is deadly can be changed to search for the id
+						// in an array of deadly objects, but for now Spikes will do
+						if(o.id.equals("Spikes")){
+							die();
+						}
 					}
 				}
 			}
